@@ -38,14 +38,14 @@ if(isset($_SESSION["user"])){
 			</div>
 		</div>
 		<div id="form">
-			<form method="post" action="test.php">
+			<form method="post" action="login.php">
 				<div class="form-group">
 				<label for="user_id">Username:</label>
-				<input type="text" name="user_id" class="form-control" id="user_id"><?php echo $_GET["username_err"] ?>
+				<input type="text" name="user_id" class="form-control" id="user_id" placeholder="Username"><?php echo "<span class='error'>".$_GET["username_err"]."</span>" ?>
 				</div>
 				<div class="form-group">
 				<label for="pass">Password:</label>
-				<input type="password" name="pass" placeholder="Password" id="pass" class="form-control"><?php echo $_GET["password_err"] ?>
+				<input type="password" name="pass" placeholder="Password" id="pass" class="form-control"><span class="error"><?php echo "<span class='error'>".$_GET["password_err"]."</span>"?></span>
 				</div>
 				<div id="sbtn">
 				<input type="submit" name="submit" value="submit" class="btn btn-default" id='submit'><br>

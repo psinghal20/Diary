@@ -43,6 +43,6 @@ if(isset($_POST["submit"])){
     		$see_err=2;
 		}
 	}
-	header("location:untitled.php?username_err=".$username_err."&password_err=".$password_err."&see_err=".$see_err);
+	header("location:index.php?username_err=".$username_err."&password_err=".$password_err."&see_err=".$see_err);
 }
 ?>

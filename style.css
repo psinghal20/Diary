@@ -76,3 +76,6 @@ label{
 	display: flex;
 	justify-content: center;
 }
+.error{
+	color:white;
+}

@@ -3,7 +3,7 @@
 	include 'config.php';
 	$conn=mysqli_connect($servername,$username,$password,$dbname);
 	if (!isset($_SESSION["user"])) {
-		header("location:untitled.php");
+		header("location:index.php");
 	}
 ?>
 <html>
