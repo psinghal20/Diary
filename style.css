@@ -1,0 +1,78 @@
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+#new_post{
+	display: none;
+}
+.container-fluid{
+	background-color: rgb(133, 43, 35);
+	height: 100vh;
+}
+#title{
+	font-size: 60px;
+}
+#bookmark{
+	position: fixed;
+	right:25px;
+	top:0px;
+	height: 100px;
+	width: 100px;
+}
+.introduction{
+	font-size: 30px;
+	margin: 20px;
+}
+#window{
+	height: 70px;
+	overflow: hidden;
+}
+#content{
+	transition: transform 2s;
+	animation-name: scroller;
+	animation-duration: 16s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes scroller{
+	12.5% {transform: translate(0,-65px);}
+	25% {transform: translate(0,-140px);}
+	37.5% {transform: translate(0,-190px);}
+	50% {transform: translate(0,-260px);}
+	62.5% {transform: translate(0,-320px);}
+	75% {transform: translate(0,-380px);}
+	87.5%{transform: translate(0,-440px);}
+	100% {transform: translate(0,0px);}
+}
+#scroller{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#register{
+	text-decoration: underline;
+	color: white;
+}
+
+#footer{
+	font-size: 25px;
+	color: white;
+}
+#form{
+	width:300px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+label{
+	color:white;
+}
+#submit{
+	margin: auto;
+}
+#sbtn{
+	display: flex;
+	justify-content: center;
+}
